@@ -15,35 +15,22 @@
 
 body{
     font-family: v.$primary-font;
-    background-position: top right;
-    z-index: 2;
-    background-color: v.$bg-primary-color;
-    &::before{
-        //THIS IS FOR DE SECONDARY BACKGROUND
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 30%;
-        height: 70%;
-        background-color: v.$bg-secondary-color;
-        background-image: url(img/body-background.png);
-        background-repeat: no-repeat;
-        background-size: 500px;
-        background-position: -100px 50px;
-        z-index: -1;
-    }
+    background-image:url(img/woman.png), url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: 75%, 100% 92%;
+    background-position:right 100px top, center top;
+    position: relative;
+    z-index: 1;
 }
 
 .page{
     max-width: 1600px;
     padding-left: 16px;    
-    padding-bottom: 16px;
     margin-right: auto;
     margin-left: auto;
-    background-image:url(img/woman.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: 26rem 1rem;
+    position: relative;
     }
+
+main{
+    display: flex;
+}
