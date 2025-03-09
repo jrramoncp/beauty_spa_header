@@ -7,7 +7,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: v.$primary-color;
+    font-size: 18px;
 }
+
+//  ASE BODY AND .PAGE STYLES //
 
 body{
     font-family: v.$primary-font;
@@ -15,19 +19,19 @@ body{
     z-index: 2;
     background-color: v.$bg-primary-color;
     &::before{
+        //THIS IS FOR DE SECONDARY BACKGROUND
         content: "";
         display: inline-block;
         position: absolute;
         top: 0;
         right: 0;
-        width: 635px;
-        height: 820px;
+        width: 30%;
+        height: 70%;
         background-color: v.$bg-secondary-color;
-        background-image: url(img/body-background.svg);
+        background-image: url(img/body-background.png);
         background-repeat: no-repeat;
-        background-size: 400;
-        background-position: -100% 17%;
-        opacity: 0.3;
+        background-size: 500px;
+        background-position: -100px 50px;
         z-index: -1;
     }
 }
@@ -40,6 +44,6 @@ body{
     margin-left: auto;
     background-image:url(img/woman.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right  bottom;
+    background-size: 80%;
+    background-position: 26rem 1rem;
     }

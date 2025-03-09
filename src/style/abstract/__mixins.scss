@@ -1,0 +1,23 @@
+@use "__variables" as v;
+
+@mixin list-reset(){
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+@mixin button(){
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 15px ;
+    color: white;
+    background-color: v.$primary-color;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+    &:hover{
+        background-color: v.$bg-primary-color;
+        color: v.$primary-color;
+
+    }
+}

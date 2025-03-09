@@ -1,0 +1,76 @@
+@use "../abstract/_variables" as v;
+@use "../abstract/_mixins" as m;
+
+header.header{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        width: 200px;
+    }
+
+
+    .main__nav{
+        ul{
+            @include m.list-reset;
+            gap: 56px;
+            li{
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                &:last-of-type{
+                    a{
+                        display: inline-block;
+                        background-image: url(/img/arrow-down.svg);
+                        background-position: right ;
+                        background-repeat: no-repeat;
+                        padding-right: 20px;
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+
+    .aside__menu{
+        display: flex;
+        justify-content: space-between;
+        min-width: 20%;
+        gap: 30px;
+        .menu__icons{
+            .icons{
+                @include m.list-reset;
+                gap: 1em
+            }
+        }
+
+        .menu__login{
+            ul{
+                @include m.list-reset;
+                gap: 32px;
+                
+                li{
+                    a{
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    }
+                    .btn{
+                        @include m.button
+                    }
+                }
+            }
+            
+        }
+    }
+}
