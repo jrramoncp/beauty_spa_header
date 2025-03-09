@@ -1,8 +1,10 @@
-
+@use "abstract/_variables" as v;
+@use "abstract/_tipography";
 
 // RESET // 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: v.$primary-font;
 }
