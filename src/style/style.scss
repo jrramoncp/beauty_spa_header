@@ -15,9 +15,9 @@
 
 body{
     font-family: v.$primary-font;
-    background-image:url(img/woman.png), url(img/background.png);
+    background-image:url(/img/woman.png), url(/img/background.png);
     background-repeat: no-repeat;
-    background-size: 75%, 100% 92%;
+    background-size: 75%, 100% 90%;
     background-position:right 100px top, center top;
     position: relative;
     z-index: 1;

@@ -4,7 +4,7 @@
 .hero{
     .hero__content{
         max-width: 70%;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
         .hero__title{
             font-size: 65px;
             font-weight: bold;
@@ -24,7 +24,7 @@
         ul{
             @include m.list-reset;
             gap: 32px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             align-items: center;
             li{
                 .video{
